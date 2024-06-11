@@ -3,10 +3,11 @@
 name: metrics.aspose.com-qa
 
 # Controls when the action will run. 
-on: workflow_dispatch 
+on: 
+  workflow_dispatch: 
   # Scheduled trigger
-  #schedule:
-  #  - cron: '55 */3 * * *'
+  schedule:
+    - cron: '55 */3 * * *'
   
   #push:
   #  branches: [ main ]
