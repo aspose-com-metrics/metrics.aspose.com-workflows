@@ -27,9 +27,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-            ref: main
-            submodules: true  # Fetch Hugo themes
-            fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+            repository: aspose-com-metrics/aspose-com-metrics
+            token: ${{ secrets.REPO_TOKEN }}
+            fetch-depth: 0 
 
       # Step 2 - Sets up the latest version of Hugo
       - name: Setup Hugo
