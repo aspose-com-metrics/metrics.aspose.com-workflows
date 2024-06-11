@@ -29,6 +29,8 @@ jobs:
         with:
             repository: aspose-com-metrics/aspose-com-metrics
             token: ${{ secrets.REPO_TOKEN }}
+            ref: main
+            submodules: true  # Fetch Hugo themes
             fetch-depth: 0 
 
       # Step 2 - Sets up the latest version of Hugo
